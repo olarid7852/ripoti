@@ -1,0 +1,214 @@
+.main {
+  font-weight: 700 !important;
+  height: 100vh !important;
+  overflow: hidden;
+  font-size: 12px;
+  position: relative;
+  color: $color-green;
+  font-family: "Raleway", sans-serif;
+}
+.header-2 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+.paragraph {
+  color: $color-orange;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+}
+.imga {
+  position: fixed;
+  top: 3%;
+  left: 3%;
+}
+.anchor {
+  color: $color-green;
+
+  &:hover {
+    color: $color-orange;
+  }
+}
+.button {
+  margin-bottom: 1rem !important;
+  color: $color-white !important;
+}
+.login-form {
+  margin-top: 20vh;
+  font-size: 19px;
+  border-radius: 10px;
+  padding: 1rem 0 2rem;
+  box-shadow: 0 0 10px 0 rgba(177, 176, 176, 0.21);
+  .checkbox {
+    padding-left: 0;
+    padding-right: 5px;
+    margin-bottom: 0;
+  }
+}
+
+.form-container {
+  width: 100%;
+  font-size: 19px;
+  margin: 0;
+}
+
+.forgot-section {
+  display: flex;
+  margin:  2rem;
+  font-size:12px;
+  flex-direction: row;
+  cursor:pointer;
+  justify-content: space-between;
+}
+
+.input-group {
+  font-size: 12px;
+  font-weight: 400;
+  height: 100%;
+  width: 100%;
+
+  .form-group {
+    width: 100%;
+    position: relative;
+    padding: 0 1rem;
+    margin: 0;
+
+    label {
+      font-size: 12px;
+      font-weight: bold;
+      color: $color-green;
+    }
+    input {
+      outline: 0;
+      color: inherit !important;
+      font-size: 12px;
+      background-color: #fff;
+      border-radius: 10px;
+      height: 50px;
+      border: 2px solid $color-green !important;
+
+      &:focus {
+        outline: 0 !important;
+      }
+    }
+  }
+
+  .button {
+    margin: 0 1rem;
+    height: 48px;
+    border: 0;
+    background-color: $color-orange;
+    transition: color 0.2s ease-in;
+
+    &:hover {
+      background: $color-orange;
+      opacity: 0.9;
+    }
+
+    &:focus {
+      box-shadow: none;
+      background: $color-orange;
+    }
+  }
+}
+
+.remember-me {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    &:checked ~ .checkmark {
+      background-color: $color-green;
+
+      &:after {
+        display: block;
+      }
+    }
+  }
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    margin: 3px 3px 0 -18px;
+    width: 18px;
+    border: 2px solid $color-green;
+    border-radius: 1px;
+    background-color: transparent;
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+    &:after {
+      left: 6px;
+      top: 2px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  }
+}
+
+.icon {
+  color: $color-orange;
+  top: 60% !important;
+  right: 15%;
+  cursor: pointer;
+  position: absolute !important;
+  z-index: 2;
+}
+
+.login-field {
+
+}
+
+.help-block,
+.help-block-error {
+  padding-top: 5px;
+  color: $color-danger;
+  font-size: 13px;
+}
+
+@include media-breakpoint-up(md){
+  .main {
+    font-size: 19px;
+  }
+  .forgot-section {
+    font-size: 16px;
+  }
+  .header-2 {
+    font-size: 32px;
+  }
+  .paragraph {
+    font-size: 19px;
+  }
+
+  .input-group {
+    .form-group {
+      label {
+        font-size: 19px;
+      }
+
+      input {
+        outline: 0;
+        color: $color-green !important;
+        font-size: 19px;
+      }
+    }
+  }
+}

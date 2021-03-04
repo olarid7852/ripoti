@@ -1,0 +1,50 @@
+#invite-types-form {
+  label {
+    font-weight: bold;
+  }
+}
+
+.invite-field {
+  width: 100%;
+  padding: 7px;
+  border-radius: 10px;
+  font-size: 14px;
+  text-align: left;
+  color: $color-text;
+  border: solid 1px $color-text !important;
+  background-color: $color-white;
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.cancel-btn,
+.invite-btn {
+  border-radius: 4px;
+  margin-bottom: 12px;
+  color: $color-white !important;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  padding: .5rem 1.5rem;
+  @include media-breakpoint-down(md) {
+    padding: .5rem 1rem;
+    font-size: 15px;
+  }
+}
+
+.invite-btn {
+  background-color: $color-green !important;
+  margin-right: .5rem;
+  margin-left: 1rem;
+}
+
+.cancel-btn {
+  background-color: $danger !important;
+}
+
+.cancel-status {
+  color: $color-orange !important;
+  border: 1px solid $color-orange !important;
+}

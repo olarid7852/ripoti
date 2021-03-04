@@ -1,0 +1,21 @@
+.user_save_btn {
+    background-color: $color-green !important;
+}
+.user_form_group {
+    label {
+        font-weight: bold;
+        color: $color-text;
+    }
+}
+.user-form {
+    border-radius: 10px;
+    border: solid 1px $color-text !important;
+    padding: .5rem;
+    width: 100%;
+}
+#user_modal {
+    top: 20% !important;
+    @include media-breakpoint-down(sm) {
+        top: 10% !important;
+    }
+}

@@ -1,0 +1,77 @@
+.sign_up_page {
+  border-radius: 12px;
+  border: solid 1px $color-text;
+  padding: .25rem 1rem;
+  margin: 2.2rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.line-image {
+  border-bottom:  solid 1px $color-green;
+  padding: 0 12% ;
+  margin-bottom: .5rem;
+}
+.accept_invite {
+  font-size: 20px;
+  font-weight: bold;
+  color: $color-text;
+}
+.sign_up_head {
+  font-size: 14px;
+  color: $color-text;
+}
+.sign_up_label {
+  border-radius: 10px;
+  border: solid 1px $color-text !important;
+}
+.sign_up_form {
+  margin-bottom: 0;
+  label{
+    font-size: 12px;
+    color: $color-text;
+    margin-bottom: 0;
+    font-weight: bold;
+  }
+}
+.button_sign_up {
+  border-radius: 6px;
+  background-color:$color-orange;
+  color: $color-white;
+  padding: .75rem 2rem;
+  font-size: 16px;
+  transition: color 0.2s ease-in;
+  &:hover {
+    background: $color-orange;
+    opacity: 0.9;
+  }
+
+  &:focus {
+    box-shadow: none;
+    background: $color-orange;
+  }
+}
+@include media-breakpoint-down(md){
+  .sign_up_page{
+    padding: 2.5rem 2rem 1rem;
+
+  }
+  .line-image {
+    padding: 0 15%;
+  }
+  .accept_invite {
+    font-size: 24px;
+  }
+  .sign_up_head {
+    font-size: 16px;
+  }
+  .sign_up_form {
+    label
+    {
+      font-size: 12px;
+    }
+  }
+  .button_sign_up {
+    padding: .75rem 4rem;
+    font-size: 18px;
+  }
+}

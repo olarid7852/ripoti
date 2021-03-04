@@ -1,0 +1,89 @@
+{
+    "name": "cottacush/yii2-base-project",
+    "description": "A Yii 2 Base Project Template",
+    "keywords": ["yii2", "framework", "basic", "project template", "improved"],
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "require": {
+        "php": "~5.5|~7.0",
+        "yiisoft/yii2": ">=2.0.8",
+        "yiisoft/yii2-bootstrap": "*",
+        "yiisoft/yii2-swiftmailer": "*",
+        "vlucas/phpdotenv": "^2.2",
+        "lukasoppermann/http-status": "^2.0",
+        "ogheo/yii2-htmlcompress": "^1.1",
+        "cottacush/yii2-utils":  "^2.1",
+        "cottacush/yii2-widgets": "1.2.7",
+        "cottacush/yii2-permissions-ext": "^2.0",
+        "cottacush/yii2-user-auth": "^1.0",
+        "pda/pheanstalk": "^3.1",
+        "yiisoft/yii2-queue": "~2.3.0",
+        "yiisoft/yii2-bootstrap4": "^2.0",
+        "kartik-v/yii2-date-range": "dev-master",
+        "kartik-v/yii2-widget-datepicker": "^1.4",
+        "kartik-v/yii2-field-range": "^1.3",
+        "kartik-v/yii2-widget-select2": "dev-master",
+        "freesoftwarefactory/yii2-select3": "1.0007",
+        "miloschuman/yii2-highcharts-widget": "*",
+      "ext-curl": "*",
+        "abraham/twitteroauth": "^1.1",
+      "ext-json": "*",
+        "zbateson/mail-mime-parser": "^1.2",
+        "loveorigami/yii2-slimscroll-widget": "*"
+    },
+    "require-dev": {
+        "codeception/codeception": "*",
+        "yiisoft/yii2-debug": "*",
+        "yiisoft/yii2-gii": "*",
+        "yiisoft/yii2-faker": "*",
+        "squizlabs/php_codesniffer": "2.*",
+        "pdepend/pdepend" : "2.2.4",
+        "phploc/phploc": "*",
+        "phpmd/phpmd" : "@stable",
+        "sebastian/phpcpd": "*",
+        "theseer/phpdox": "*",
+        "phpunit/phpunit": "4.8"
+    },
+    "config": {
+        "process-timeout": 1800,
+        "discard-changes" : true,
+        "fxp-asset": {
+            "npm-asset-library": "vendor/npm",
+            "bower-asset-library": "vendor/bower"
+        }
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "yii\\composer\\Installer::postCreateProject"
+        ]
+    },
+    "authors" : [
+        {
+            "name": "Adegoke Obasa",
+            "email": "goke@cottacush.com",
+            "homepage": "http://adegokeobasa.me",
+            "role": "Software Engineer"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "extra": {
+        "yii\\composer\\Installer::postCreateProject": {
+            "setPermission": [
+                {
+                    "app/runtime": "0777",
+                    "app/web/assets": "0777",
+                    "yii": "0755"
+                }
+            ],
+            "generateCookieValidationKey": [
+                "app/config/web.php"
+            ]
+        }
+    }
+}

@@ -1,0 +1,65 @@
+.logo1 {
+  padding-top: 40px;
+}
+.prg {
+  border-bottom: 1px solid $color-green;
+  font-family: $ff-body;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.52;
+  text-align: center;
+  color: $color-orange;
+  padding: 10px;
+}
+.iconi {
+  margin: 20px;
+  justify-content: center;
+}
+.email_link {
+  font-family: $ff-body;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.38;
+  letter-spacing: 1px;
+  text-align: center;
+  color: $color-green;
+  padding-bottom: 10px;
+}
+.sent {
+  display: inline;
+}
+.link3 {
+  text-decoration: underline;
+  color: $color-green;
+}
+.ok {
+  border-radius: 6px;
+  background-color: $color-orange;
+  font-family: $ff-body, serif;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.31;
+  letter-spacing: 1.6px;
+  text-align: center;
+  color: $color-white;
+  &:hover {
+    background: $color-orange;
+    opacity: 0.9;
+  }
+
+  &:active {
+    background: $color-orange;
+  }
+}
+@media (min-width: 768px) {
+  .prg {
+    padding: 10px 50px;
+  }
+}

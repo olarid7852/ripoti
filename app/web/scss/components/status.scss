@@ -1,0 +1,19 @@
+.status, .assigned_case_status {
+  text-transform: uppercase !important;
+  &--active, &--verified, &--accepted, &--new {
+    color: $color-green;
+  }
+  &--inactive, &--unverified, &--declined , &--cancelled{
+    color: $danger;
+  }
+  &--resolved, &--withdrawn {
+    color: #000000;
+  }
+  &--pending, &--in-progress, &--case-created {
+    color: $color-orange;
+  }
+}
+.btn,
+.form-control {
+  box-shadow: none !important;
+}

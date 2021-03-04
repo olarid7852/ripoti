@@ -1,0 +1,78 @@
+.admin_role_modal {
+  top: 3% !important;
+  position: fixed;
+  @include media-breakpoint-down(sm) {
+    top: 0 !important;
+  }
+
+  .modal-dialog {
+    max-width: 700px !important;
+  }
+}
+
+.checkbox_group {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: $color-text !important;
+  font-size: 14px;
+  font-family: Raleway;
+
+  @include media-breakpoint-down(md) {
+    grid-template-columns: auto;
+  }
+
+  .checkbox {
+    label {
+      font-weight: bold;
+    }
+  }
+}
+
+  .custom-control,
+  .custom-checkbox {
+    padding: 10px;
+    color: $color-text;
+  }
+
+.role-field-display {
+  display: flex;
+  justify-content: left;
+}
+
+.admin_role,
+.invite-select {
+  label {
+    font-weight: bold;
+    color: $color-text;
+  }
+}
+
+.role-input {
+  border: 1px solid $color-text;
+  border-radius: 8px;
+
+  &:focus {
+    border: 1px solid $color-text !important;
+    box-shadow: none !important;
+  }
+}
+
+.role_save_btn {
+  background-color: $color-orange !important;
+  padding: .5rem 2rem;
+  border-radius: 4px;
+  color: $color-white !important;
+  margin-bottom: .5rem;
+
+  &:hover {
+    background: $color-orange;
+    opacity: 0.9;
+    color: $color-white;
+  }
+
+  &:active {
+    box-shadow: none !important;
+    background: $color-orange;
+  }
+
+}

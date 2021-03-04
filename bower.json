@@ -1,0 +1,30 @@
+{
+  "name": "Yii2-base-project",
+  "description": "A Yii 2 Base Project Template",
+  "main": "gulpfile.js",
+  "authors": [
+    "Cotta & Cush Developers <developers@cottacush.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "starter",
+    "kit",
+    "starter-kit",
+    "front-end",
+    "web",
+    "development"
+  ],
+  "homepage": "https://github.com/CottaCush/yii2-base-project",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "chart.js": "^2.9.3"
+  }
+}

@@ -1,0 +1,129 @@
+.landing {
+  &_wrapper {
+    min-height: calc(100vh - 180px);
+  }
+
+  &-page {
+    margin: 50px 0;
+  }
+
+  &-info {
+    color: #000;
+    text-align: center;
+    height: auto;
+
+    p {
+      margin: 0;
+    }
+
+    .bold {
+      margin-top: 2rem;
+      line-height: 40px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 30px;
+    }
+
+    .normal {
+      font-size: 24px;
+      line-height: 40px;
+    }
+
+    .report-button {
+      color: #fff;
+      font-size: 20px;
+      margin-top: 1.5rem;
+      background-color: $color-orange;
+      font-weight: 600;
+      padding: 1.2rem 4rem;
+      cursor: pointer;
+      transition: 0.5s ease-in;
+
+      &:hover {
+        color: #fff;
+        background-color: rgba($color-orange, 0.9);
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .landing-info {
+    height: auto;
+    .bold {
+      line-height: 30px;
+      font-size: 24px!important;
+    }
+
+    .normal {
+      line-height: 25px;
+      font-size: 20px !important;
+    }
+
+    .report-button {
+      font-size: 16px;
+      padding: 1rem 2rem;
+    }
+  }
+}
+//ADMIN DASHBOARD
+.grid-item {
+  background-color: $color-white;
+}
+
+.label,
+.report_cases,
+.report_table {
+  font-family: $ff-body;
+  font-weight: bold;
+  color: $color-text;
+}
+.label,
+.report_table {
+  font-size: 22px;
+  @include media-breakpoint-down(md) {
+    font-size: 18px;
+  }
+}
+
+.figure {
+  color: $color-text;
+}
+.report_cases {
+  font-size: 30px;
+  @include media-breakpoint-down(md) {
+    font-size: 22px;
+  }
+}
+.item-body {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-gap: 2px;
+  border-radius: 2px;
+  box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.16);
+  @include media-breakpoint-down(md) {
+    margin-bottom: 10px;
+  }
+ .material-icons {
+    font-size: 35px !important;
+  }
+}
+.chart-containers {
+  position: relative;
+}
+.charts {
+  border-radius: 2px;
+  box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.16);
+  margin: 1rem 0;
+  .pagination-box {
+    visibility: hidden;
+  }
+}
+@include media-breakpoint-down(md){
+  .scroll {
+    overflow: auto !important;
+  }
+  .chart-containers {
+   width:100vw;
+  }
+}

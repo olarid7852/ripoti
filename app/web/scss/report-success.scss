@@ -1,0 +1,52 @@
+.message-wrapper {
+  margin-top: 4rem;
+  font-family: Raleway, sans-serif;
+  font-size: 19px;
+  color: $color-green;
+
+  .success-image {
+    display: flex;
+    justify-content: center;
+  }
+
+  .success-text {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    &-bold {
+      font-weight: bold;
+    }
+
+    p {
+      margin-bottom: 0 !important;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 60px;
+      letter-spacing: 2px;
+    }
+
+    .link-text {
+      margin-top: 2rem;
+
+      a {
+        padding: 15px 20px;
+        border-radius: 5px;
+        background-color: $color-orange;
+        color: $color-white;
+        text-decoration: none;
+        transition: opacity 0.5s ease-in;
+
+        &:hover {
+          opacity: 0.9;
+          background-color: $color-orange;
+        }
+
+        &:focus {
+          background-color: $color-orange;
+        }
+      }
+    }
+  }
+}

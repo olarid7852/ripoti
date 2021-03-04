@@ -1,0 +1,147 @@
+.bar {
+    background-color: $color-green;
+    box-sizing: border-box;
+    height: 69px;
+    position: relative;
+    width: 100vw !important;
+}
+.welcome {
+    font-size: 60px !important;
+}
+.note {
+    font-size: 25px;
+    color: #5f5f5f;
+    font-weight: normal;
+}
+.logout-icon {
+    color: $color-white;
+}
+.d-icon{
+    color: $color-green;
+}
+.d-icon:hover {
+    color: $color-green;
+}
+
+.dashboard-text{
+    color: #279a47;
+    margin-bottom: unset !important; 
+    font-size: 30px;
+    font-weight: bold;
+}
+.home {
+    text-align: left;
+    color: #f79521;
+    top: 130px;
+    font-size: 18px;
+    font-weight: normal;   
+}
+.d-item {
+    margin-top: 24px;
+    text-decoration: none;
+    color: #279a47 !important;
+    font-size: 24px;
+    padding-left: 25px;
+    display:flex;
+    border: 1px solid transparent;
+}
+.d-text {
+    margin-left: 10px;
+    text-decoration: none;
+    max-width: 100%;
+    height: auto;
+    color: #5f5f5f;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 0; 
+}
+.d-item:active {
+    color: $color-text;
+    width: 100%;
+}
+
+.d-text:hover {
+    color: $color-green;
+    text-decoration: none;
+    transform: scale(1.06);
+    transition: all 0.3s ease-in;
+}
+.profile-icon {
+    font-size: 41px !important;
+    padding-top : 5px;
+}
+.logout {
+    display : flex;
+    cursor: pointer;
+    padding-left: -10px !important;
+    padding-top : 10px;
+    color : $color-white !important;
+}
+
+.admin-id {
+    padding: 12px ;
+}
+.sign-out {
+    padding-top : 10px;
+    color : $color-white !important;
+}
+.content {
+    margin-left: 284px;
+    overflow: hidden;
+    margin-top: 24px;
+}
+.bar1 {
+    top:0;
+    left: 0;
+    width: 277px;
+    text-decoration: none;
+    font-size: 16px;
+    height: auto;
+    position: fixed;
+    font-weight: bold;
+    color: $color-text;
+    
+}
+.logoo {
+    margin-top:0;
+}
+.list {
+    margin-top:75px;
+}
+.imgs {
+    max-width: 100%;
+}
+.items {
+    text-decoration: none; 
+    border-radius: 0 5px 5px;
+    border-right: 1px solid black;
+    height: 100vh;
+    background-color: white;
+}
+.dashboard-logo {
+    color: $color-green;
+    font-size: 98px; 
+    margin-top: 10%;
+}
+
+.content-wrapper {
+    margin-left: 87px;
+    @include media-breakpoint-up(lg) {
+        margin-left: 294px
+    }
+}
+
+@include media-breakpoint-down(md){
+    .d-text {
+       display: none; /* visibility: none; */
+    }
+    .items {
+        width:70px;
+    }
+    .content {
+        margin-left: 80px;
+    }
+    .bar1 {
+     width: 77px;
+    }
+}
